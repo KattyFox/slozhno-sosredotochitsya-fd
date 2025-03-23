@@ -3,17 +3,36 @@
   и их переопределение под различные устройства
 */
 
-@media (width <= 375px) {
+:root {
+  --main-bg-color: #000028;
+  --text-color: #F1B2CE;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --menu-text-color: #FF0070;
+  --section-heading-color: #FF0070;
+  --main-gap: 20px;
+  --main-text-size: 18px;
+  --main-line-height: 23.4px;
+  --main-font: 'IBM Plex Mono', monospace;
+}
+
+@media (width >= 375px) {
   body {
     height: 668px;
+    
+    font-family: var(--main-font, monospace);
   }
 
   header {
     margin-block-end: 30px;
   }
+
+  .page {
+    min-block-size: 375px;
+  }
 }
 
-@media (width <= 768px) {
+@media (width >= 768px) {
   body {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -24,9 +43,18 @@
 
 
   }
+  .content-section_title {
+    margin-block-end: 0;
+
+  }
+
+  .causes .content-section_title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
-@media (width <= 1024px) {
+@media (width >= 1024px) {
   body {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--main-gap);
@@ -35,7 +63,7 @@
 
 
   }
-  .why.text-blocks {
+  .why .text-blocks {
     grid-column: span 2;
   }
 }
