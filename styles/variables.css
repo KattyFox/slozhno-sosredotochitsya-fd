@@ -2,3 +2,41 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+@media (width <= 375px) {
+  body {
+    height: 668px;
+  }
+
+  header {
+    margin-block-end: 30px;
+  }
+}
+
+@media (width <= 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--main-gap);
+
+    height: 1024px;
+
+
+
+  }
+}
+
+@media (width <= 1024px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--main-gap);
+    height: 768px;
+
+
+
+  }
+  .why.text-blocks {
+    grid-column: span 2;
+  }
+}
+

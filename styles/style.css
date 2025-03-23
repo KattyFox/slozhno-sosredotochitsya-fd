@@ -1,5 +1,102 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+:root {
+  --text-size: 18px;
+  --l-height: 23.4px;
+  --font-family: 'IBM Plex Mono', monospace;
+  
+}
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  padding: 0 10px;
+  background-color: var(--bg-color, #000028);
+  color: var(--text-color, #F1B2CE);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: var(--text-size, 18px);
+  line-height: var(--l-height, 23.4px);
+
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70px;
+  height: 98px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__theme-menu-item {
+  margin-bottom: 10px;
+}
+
+.header__title-container p {
+  margin: 0;
+}
+
+.header {
+
+}
+
+.header__title {
+  font-size: 116px;
+  line-height: 83%;
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+.header__theme-menu-button {
+  background: none;
+  border: 1px solid var(--accent-color);
+  padding: 13px 13px;
+  line-height: 18px;
+  font-size: var(--text-size);
+  color: var(--menu-text-color);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  opacity: 0.8;
+}
+
+.text-block {
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: calc(4* var(--main-gap)) var(--main-gap);
+  font-size: var(--content-text-size);
+  line-height: var(--main-line-height);
+}
+
+.content-section_title {
+  margin-block-end: calc();
+}
+
+.content-section-artice_title {
+  margin-bottom: 10px;
+  color: var(--title-color);
+  font-size: var(--text-size);
+  line-height: var(--l-height);
+}
+
+.text-article {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  line-height: var(--l-height);
 }
