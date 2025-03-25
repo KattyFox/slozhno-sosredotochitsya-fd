@@ -22,7 +22,8 @@
   --footer-title-color: #DB00FF;
   --accent-color: #FF0070;
   --menu-text-color: #FF0070;
-  --bg-image: url('path/to/dark-theme-image.jpg');
+  --title-dark-bg-image: url('../images/cover-image.png');
+  --main-dark-bg-image: url('../images/cover-image-dark.png');
 
 }
 
