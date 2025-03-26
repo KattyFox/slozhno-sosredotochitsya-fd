@@ -20,7 +20,7 @@
   <body class="page">
   
     <header class="header decorated-zone">
-      <div class="header__decorative-rec" aria-hidden="true">REC</div>
+      <span class="header__decorative-rec" aria-hidden="true">REC</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -31,6 +31,7 @@
           </li>
           <li class="header__theme-menu-item">
             <button
+              disabled
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled>
               Авто
@@ -61,7 +62,7 @@
           <article class="text-block">
             <h3 class="text-block_title">Многозадачность</h3>
             <p class="text-article">Особенно сложно сосредоточиться, когда задач много и все они — важные. 
-              Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи выяснили, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». 
+              Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи <a href="#" class="text-link">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». 
               Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
           </article>
           <article class="text-block">
@@ -109,7 +110,7 @@
                 Можно вообще попробовать включить плейлист с «белым шумом» или нейромузыкой.</p>
                 
                 <h4 class="text-block-subtitle">Прогуляйтесь</h4>
-                <p class="text-article">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент показал, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. 
+                <p class="text-article">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="#" class="text-link">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. 
                 Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
                 
                 <h4 class="text-block-subtitle">Хорошо ешьте</h4>
@@ -124,23 +125,23 @@
         </div>
       </section>
       
-      <section class="pictures content-section">
-        <h2 class="content-section_title">А можно на картинках?</h2>
-        <div class="gallery">
-          <figure class="gallery__item">
-            <img src="./images/sunset.png" alt="Закат на море" loading="lazy" class="gallery__image sunset">
+      <section class="pictures-section">
+        <h3 class="text-block_title">А можно на картинках?</h3>
+        <div class="gallery container">
+          <figure class="gallery__item sunset">
+            <img src="./images/sunset.png" alt="Закат на море" loading="lazy" class="gallery__image">
           </figure>
-          <figure class="gallery__item">
-            <img src="./images/ice-cream.png" alt="Мороженое" loading="lazy" class="gallery__image ice-cream">
+          <figure class="gallery__item ice-cream">
+            <img src="./images/ice-cream.png" alt="Мороженое" loading="lazy" class="gallery__image">
           </figure>
-          <figure class="gallery__item">
-            <img src="./images/tape.png" alt="Кассета" loading="lazy" class="gallery__image ice-cream">
+          <figure class="gallery__item music">
+            <img src="./images/tape.png" alt="Кассета" loading="lazy" class="gallery__image">
           </figure>
-          <figure class="gallery__item">
+          <figure class="gallery__item  books">
             <img src="./images/books.png" alt="Книги" loading="lazy" class="gallery__image books">
           </figure>
-          <figure class="gallery__item">
-            <img src="./images/street.png" alt="Улица" loading="lazy" class="gallery__image street">
+          <figure class="gallery__item  street">
+            <img src="./images/street.png" alt="Улица" loading="lazy" class="gallery__image">
           </figure>
       </section>
     </main>
