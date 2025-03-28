@@ -120,7 +120,7 @@
 }
 
 .title-decor:last-child {
-  margin-bottom: 10px; /* Или нужное вам значение */
+  margin-bottom: 10px;
 }
 
 .header__decor {
@@ -280,23 +280,24 @@
 .text-link {
   color: var(--article-text-color);
   text-shadow: 2px 2px 0 var(--accent-color);
-  text-decoration: none; /* убираем стандартное подчеркивание */
-  transition: all 0.3s ease; /* плавные переходы для hover эффектов */
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .text-link:hover {
-  text-decoration: underline; /* добавляем подчеркивание при наведении */
-  text-shadow: 3px 3px 0 var(--accent-color); /* усиливаем тень при наведении */
+  text-decoration: underline;
+  text-shadow: 3px 3px 0 var(--accent-color);
 }
 
 .text-link:focus {
-  outline: 1px solid var(--accent-color); /* стиль для фокуса (доступность) */
+  outline: 1px solid var(--accent-color);
   outline-offset: 2px;
 }
 
 /* Галерея */
 .gallery {
-  grid-template-columns: 1fr; /* 1 колонка на мобильных */
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   padding: 10px;
   }
