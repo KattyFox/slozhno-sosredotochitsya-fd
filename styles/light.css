@@ -5,7 +5,6 @@
 */
 
 :root.theme-light {
-  --main-bg-color: #353430;
   --main-heading-color: #353430;
   --article-text-color: #353430;
   --header-title-color: #FFC2E6;
@@ -15,11 +14,24 @@
   --main-light-bg-image: url('../images/cover-image-light.png');
 }
 
-.theme-light .page {
-  background-image: var(--main-light-bg-image);
+.theme-light .header {
+  background-image: url('../images/cover-image-light.png');
 
-  .header {
-    background-image: var(--main-light-bg-image);
+  .header__decorative-rec {
+    color: transparent;
+  }
+  
+  .header__decorative-rec::after {
+    display: none;
   }
 }
 
+.theme-light .page {
+  background-image: var(--main-light-bg-image);
+  
+}
+
+.text-article,
+.content-section_title {
+  color: #353430;
+}

@@ -1,3 +1,8 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
 :root {
   --main-font: 'IBM Plex Mono', monospace;
  --main-bg-color: #000028;
@@ -10,6 +15,8 @@
   --main-font-weight: 700;
   --article-font-weight: 400;
   --main-line-height: 23.4px;
+  /*--mobile-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --desktop-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);*/
   --header-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   --title-dark-bg-image: url('../images/cover-image-dark.png');
   --title-light-bg-image: url('../images/cover-image-light.png');
@@ -47,22 +54,26 @@
     font-size: var(--header-title-size);
     line-height: 0.82;
   }
-
+  
   .header__title {
     display: grid;
     justify-self: start;
   }
 
-    .header__theme-menu {
-      position: static;
-      transform: none;
-      justify-self: center;
-      align-self: start;
-    } 
+  .header__subtitle{
+    width: 364px;
+  }
 
-    .header__theme-menu-list {
-      flex-direction: row;
-    }
+  .header__theme-menu {
+    position: static;
+    transform: none;
+    justify-self: center;
+    align-self: start;
+  } 
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
   
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -76,7 +87,6 @@
 
   .ice-cream {
     grid-row: span 2;
-
   }
 
   .music {
@@ -86,8 +96,10 @@
   .street {
     grid-column: span 2;
   }
+}  
 
 @media (width >= 1024px) {
+
   .header {
     min-block-size: 640px;
   }
@@ -95,6 +107,10 @@
   .header__title {
     display: grid;
     justify-self: start;
+  }
+
+  .header__subtitle{
+    width: 491px;
   }
 
   .gallery {
@@ -132,7 +148,6 @@
 
   @media (width >= 1024px) {
     grid-template-columns: repeat(3, 1fr);
-    
   }
 }
 
@@ -141,23 +156,19 @@
   gap: 20px;
 
   @media (width >=1024px) {
-    /*display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;*/
     grid-column: span 2;
   }
 }
 
-
 @media (prefers-color-scheme: dark) {
   .page {
-        color: var(--accent-color);
+    color: var(--accent-color);
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    --main-text-color: #152028;
-    --main-background-color: #ffffff;
+  --main-text-color: #152028;
+  --main-background-color: #ffffff;
   }
 }

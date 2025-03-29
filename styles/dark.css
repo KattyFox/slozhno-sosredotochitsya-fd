@@ -17,13 +17,24 @@
   --accent-color: #FF0070;
   --menu-text-color: #FF0070;
   --main-dark-bg-image: url('../images/cover-image-dark.png');
-
 }
-
 
 .theme-dark,
  .header {
   background-image: url('../images/cover-image-dark.png');
 }
 
+.theme-dark .page {
+  background-image: var(--main-dark-bg-image);
+  .header {
+    background-image: var(--main-dark-bg-image);
+  }
+}
 
+.content-section_title {
+  color: #FF0070;
+}
+
+.text-article {
+    color: #F1B2CE;
+}

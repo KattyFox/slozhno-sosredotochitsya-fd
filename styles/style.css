@@ -7,7 +7,6 @@
 .page {
   background-color: var(--bg-color, #000028);
   font-family: var(--main-font);
-  color: var(--text-color, #F1B2CE);
   font-size: var(--main-text-size, 18px);
   line-height: var(--main-line-height, 23.4px);
   background-position: center;
