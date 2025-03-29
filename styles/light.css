@@ -29,10 +29,20 @@
 .theme-light .page {
   background-image: var(--main-light-bg-image);
 
-  .text-article,
   .content-section_title {
     color: #353430;
+  }
+
+/*  .text-article,
+.content-section_title {
+    color: #353430;
+}*/
+
 }
-  
+
+.theme-light .page,
+.theme-light .text-article,
+.theme-light .content-section_title {
+  color: #353430;
 }
 
