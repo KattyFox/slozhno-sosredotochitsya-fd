@@ -69,7 +69,7 @@
       transform: none;
       justify-self: center;
       align-self: start;
-      margin-top: -59px;
+      /*margin-top: -59px;*/
     } 
 
     .header__theme-menu-list {
