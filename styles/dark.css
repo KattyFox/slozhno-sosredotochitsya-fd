@@ -29,12 +29,13 @@
   .header {
     background-image: var(--main-dark-bg-image);
   }
+
+  .content-section_title {
+    color: #FF0070;
+  }
+  
+  .text-article {
+      color: #F1B2CE;
+  }
 }
 
-.content-section_title {
-  color: #FF0070;
-}
-
-.text-article {
-    color: #F1B2CE;
-}
