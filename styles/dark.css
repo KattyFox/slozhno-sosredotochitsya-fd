@@ -25,20 +25,16 @@
  .header {
   background-image: url('../images/cover-image-dark.png');
 
-  .text-article {
-    color: #F1B2CE;
-    }
-    
-  .content-section_title {
-    color: #FF0070;
-  }
-
+  
   .page {
     background-color: #000028;
   }
-
 }
 
+.text-article {
+  color: #F1B2CE;
+  }
 
-
-
+.content-section_title {
+  color: #FF0070;
+}
