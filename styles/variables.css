@@ -87,6 +87,7 @@
   .street {
     grid-column: span 2;
   }
+}
 
 @media (width >= 1024px) {
 
