@@ -21,5 +21,13 @@
   .header {
     background-image: var(--main-light-bg-image);
   }
+
+  .header__decorative-rec {
+    color: transparent;
+  }
+
+  .header__decorative-rec::after {
+    background-color: transparent;
+  }
 }
 

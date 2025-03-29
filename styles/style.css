@@ -1,4 +1,3 @@
-/* Основные стили проекта */
 *,
 *::before,
 *::after {
@@ -6,9 +5,6 @@
 }
 
 .page {
-  /*min-inline-size: 375px;
-  max-inline-size: 1024px;
-  margin: 0;*/
   background-color: var(--bg-color, #000028);
   font-family: var(--main-font);
   color: var(--text-color, #F1B2CE);
@@ -18,8 +14,6 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-
 
 .header {
   display: grid;
@@ -33,21 +27,13 @@
   min-block-size: 668px;
   height: 100vh;
   box-sizing: border-box;
-  /*background-image: url('../images/cover-image-dark.png');*/
   background-attachment: fixed;
-
- 
 }
-
-/* Декоративные элементы */
-/*.decorated-zone {
-  margin-top: -40px;
-}*/
 
 .header__decorative-rec {
   justify-self: end;
-  top: 12px;
-  right: 26px;
+  top: 3px;
+  right: 10px;
   position: absolute;
   color: var(--accent-color);
   font-family: var(--main-font);
@@ -66,7 +52,6 @@
   border-radius: 50%;
   margin-left: 6px;
   filter: blur(2px);
-  /*top: 5px;*/
 }
 
 .decorated-zone::before,
@@ -78,8 +63,8 @@
 }
 
 .decorated-zone::before {
-  top: 12px;
-  right: 20px;
+  top: 4px;
+  right: 1px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -99,13 +84,23 @@
   color: var(--header-title-color);
   margin-bottom: 50px;
   margin-top: 10px;
-  padding-top: 40px;
+  padding-top: 13px;
+  margin-left: -10px;
+}
+
+.header__title-container {
+margin-bottom: 67px;
 }
 
 .header__subtitle {
   margin: 0;
   padding: 0;
   font-weight: var(--main-font-weight);
+  margin-right: -8px;
+}
+
+.header__subtitle:first-child {
+  margin-bottom: 0;
 }
 
 .title-decor {
@@ -143,7 +138,6 @@
   margin: 0;
 }
 
-
 .header__theme-menu-button {
   border: transparent;
   background: transparent;
@@ -170,17 +164,15 @@
 
 .header__theme-menu-button_active {
   color: var(--accent-color);
-  border: 1px solid var(--accent-color)
+  border: 1px solid var(--accent-color);
 }
 
-/* Контент */
 .content {
   display: grid;
   gap: 50px;
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
   font-weight: var(--main-font-weight);
-  /*background-image: var(--main-dark-bg-image);*/
 }
 
 .content-section {
@@ -202,13 +194,16 @@
 
 .text-block-subtitle {
   margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: var(--article-font-weight);
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 }
+
 .text-block {
   display: grid;
 }
+
 .text-block_title {
   font-weight: var(--main-font-weight);
 }
@@ -223,7 +218,6 @@
   font-size: var(--main-text-size);
   font-style: normal;
   line-height: var(--main-line-height, 23.4px);
-
 }
 
 .text-article {
@@ -234,7 +228,6 @@
   font-family: var(--main-font);
 }
 
-
 .link {
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--text-color);
@@ -243,7 +236,6 @@
 
 .link:hover, .link:focus {
   text-decoration: underline;
-  
 }
 
 .text-link {
@@ -263,26 +255,23 @@
   outline-offset: 2px;
 }
 
-/* Галерея */
 .gallery {
   display: grid;
-  /*grid-template-columns: 1fr;*/
   gap: 10px;
-  padding: 10px;
-  }
+  padding: 10px 0;
+}
+ 
+.gallery__title {
+  color: var(--accent-color);
+  font-size: var(--content-text-size);
+  margin-bottom: 20px;
+}
   
-  .gallery__title {
-    color: var(--accent-color);
-    font-size: var(--content-text-size);
-    margin-bottom: 20px;
-  }
-  
-  .gallery__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   
 .gallery__item {
   box-sizing: border-box;
@@ -290,19 +279,14 @@
   margin: 0;
 }
 
-
-/* Футер */
-
 .footer {
   position: relative;
   display: grid;
   place-items: center;
-  /*block-size: 100vh; /* Fallback */
   min-block-size: 668px;
   color: var(--footer-title-color);
   padding: var(--main-gap);
   height: 100vh;
-
 }
 
 .footer__title-container::before {
