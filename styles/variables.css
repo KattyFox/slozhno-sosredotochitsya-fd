@@ -42,7 +42,7 @@
   }  
 }
 
-@media (width >= 768px) {  
+@media (width >= 768px) {
   .header__title,
   .footer__title {
     font-size: var(--header-title-size);
