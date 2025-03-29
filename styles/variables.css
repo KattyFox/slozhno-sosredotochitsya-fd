@@ -48,6 +48,11 @@
     font-size: var(--header-title-size);
     line-height: 0.82;
   }
+
+  .header__title {
+    display: grid;
+    justify-self: start;
+  }
     .header__theme-menu {
       position: static;
       transform: none;
