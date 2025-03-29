@@ -169,6 +169,7 @@
   font-style: normal;
   line-height: var(--main-line-height, 23.4px);
   font-size: var(--main-text-size);
+  overflow-x: hidden;
 }
 
 .content-section_title {
