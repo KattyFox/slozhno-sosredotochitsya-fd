@@ -1,6 +1,6 @@
 :root {
   --main-font: 'IBM Plex Mono', monospace;
- --main-bg-color: #000028;
+  --main-bg-color: #000028;
   --text-color: #F1B2CE;
   --header-title-color: #DB00FF;
   --accent-color: #FF0070;
@@ -10,8 +10,6 @@
   --main-font-weight: 700;
   --article-font-weight: 400;
   --main-line-height: 23.4px;
-  /*--mobile-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --desktop-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);*/
   --header-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   --title-dark-bg-image: url('../images/cover-image-dark.png');
   --title-light-bg-image: url('../images/cover-image-light.png');
@@ -22,15 +20,9 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   .page {
     color: var(--accent-color);
   }
-}
+}*/
 
-@media (prefers-color-scheme: light) {
-  body {
-  --main-text-color: #152028;
-  --main-background-color: #ffffff;
-  }
-}

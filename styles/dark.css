@@ -8,14 +8,16 @@
   --accent-color: #FF0070;
   --menu-text-color: #FF0070;
   --main-dark-bg-image: url('../images/cover-image-dark.png');
+  --title-dark-bg-image: url('../images/cover-image-dark.png');
+  --title-light-bg-image: url('../images/cover-image-light.png');
 }
-.theme-dark,
- .header {
-  background-image: url('../images/cover-image-dark.png');
 
-  .page {
-    background-color: #000028;
-  }
+.page {
+  background-color: var(--main-bg-color);
+}
+
+.header {
+  background-image: url('../images/cover-image-dark.png');
 }
 
 .text-article {
