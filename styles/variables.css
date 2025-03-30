@@ -85,14 +85,15 @@
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 0.5fr 1fr 1.5fr;*/
     grid-auto-flow: row;
-    height: 823px;
+    /*height: 823px;*/
   }
 
   .sunset {
     grid-column: span 2;
+    grid-row: 1;
   }
 
   .ice-cream {
@@ -132,6 +133,10 @@
 
   .header__subtitle {
     width: 491px;
+  }
+
+  .content {
+    padding: 20px;
   }
 
   .gallery {

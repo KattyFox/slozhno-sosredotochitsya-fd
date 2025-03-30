@@ -1,8 +1,8 @@
-*,
+/*,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+}*/
 
 .page {
   background-color: var(--bg-color, #000028);
@@ -249,11 +249,10 @@
   outline-offset: 2px;
 }
 
-
-
 .gallery {
   display: grid;
-  gap: 10px;
+  gap: 20px;
+  padding: 10px 0;
 }
   
 .gallery__title {
