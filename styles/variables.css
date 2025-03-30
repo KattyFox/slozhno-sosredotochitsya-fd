@@ -76,15 +76,19 @@
     }
    
     .text-blocks {
-      grid-column: 1/-1; 
+      grid-column: 1/-1;
     }
+  }
 
+  .picture-section {
+    height: 823px;
   }
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: row;
+    height: 823px;
   }
 
   .sunset {
@@ -132,6 +136,7 @@
 
   .gallery {
   grid-template-columns: repeat(3, 1fr);
+  height: 1091px;
   }
 
 
