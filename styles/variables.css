@@ -26,45 +26,9 @@
   --gallery-item-min-height: 100px;
 }
 
-@media (width >= 375px) {
-  .page {
-    font-family: var(--main-font, monospace);
-  }
-  
-
-  .header__title,
-  .footer__title {
-    font-size: var(--header-title-size);
-  }
-  
- 
 
 
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    justify-items: end;
-    align-items: center;
-  }
-}
 
-@media (width >= 768px) {
-  
-  
-
-  /*.causes {
-    .content-section_title {
-      grid-column: 1/-1;
-      max-width: 236px;
-    }
-   
-    .text-blocks {
-      grid-column: 1/-1;
-    }
-  }*/
-
-
-}  
 
 @media (width >= 1024px) {
 

@@ -104,7 +104,9 @@
   margin-top: 10px;
   padding-top: 40px;
 
-  
+  @media (width >= 375px) {
+    font-size: var(--header-title-size);
+  }
 
   @media (width >= 768px) {
     font-size: var(--header-title-size);
@@ -167,6 +169,10 @@
   @media (width >= 375px) {
     margin-top: 48px;
     gap: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    align-items: center;
       
   }
 }
@@ -372,6 +378,10 @@
   color: var(--footer-title-color);
   padding: var(--main-gap);
   height: 100vh;
+
+  @media (width >= 375px) {
+    font-size: var(--header-title-size);
+  }
 
   @media (width >= 768px) {
     font-size: var(--header-title-size);
