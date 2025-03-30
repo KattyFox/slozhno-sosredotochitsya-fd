@@ -86,7 +86,6 @@
 
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
-    /*grid-template-rows: 0.5fr 1fr 1.5fr;*/
     grid-auto-flow: row;
     /*height: 823px;*/
   }
