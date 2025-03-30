@@ -114,6 +114,11 @@
     display: grid;
     justify-self: start;
   }
+
+  @media (width >= 1024px) {
+    display: grid;
+    justify-self: start;
+  }
 }
 
 .header__subtitle {
@@ -128,6 +133,10 @@
 
   @media (width >= 768px) {
     width: 364px;
+  }
+
+  @media (width >= 1024px) {
+    width: 491px;
   }
 }
 
@@ -160,6 +169,15 @@
   border-radius: 50%;
 }
 
+.header__theme-menu {
+  @media (width >= 1024px) {
+    position: static;
+    transform: none;
+    justify-self: center;
+    align-self: start;
+  }
+}
+
 .header__theme-menu-list {
   list-style: none;
   gap: 5px;
@@ -174,6 +192,12 @@
     justify-items: end;
     align-items: center;
       
+  }
+
+  @media (width >= 1024px) {
+    flex-direction: row;
+    
+
   }
 }
 
@@ -218,15 +242,30 @@
     padding: 10px;
 
   }
+
+  @media (width >= 1024px) {
+    padding: 20px;
+  }
+
+
 }
 
 .content-section {
-  /*padding-left: 10px;
-  padding-right: 10px;*/
+
   font-style: normal;
   line-height: var(--main-line-height, 23.4px);
   font-size: var(--main-text-size);
   overflow-x: hidden;
+
+  @media (width >=768px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .content-section_title {
@@ -254,6 +293,37 @@
     }
   }
 }
+
+.causes {
+  @media (width >= 1024px) {
+    .content-section_title {
+      grid-column: 1/-1;
+      max-width: 270px;
+    }
+  
+    .text-blocks {
+      grid-column: 1/-1;
+    
+      @media (width >= 1024px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        align-items: start;
+    }
+    }
+  }
+}
+
+.text-blocks {
+  display: grid;
+  gap: 20px;
+
+  @media (width >=1024px) {
+    grid-column: span 2;
+  }
+}
+
+
 .text-block-subtitle {
   margin-top: 10px;
   font-weight: var(--article-font-weight);
@@ -348,6 +418,11 @@
     .street {
       grid-column: span 2;
     }
+  }
+
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    height: 1091px;
   }
     
 }
