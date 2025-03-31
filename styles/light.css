@@ -33,6 +33,10 @@
   --menu-text-color: #353430;
   --menu-hover-color: rgb(50 49 45 / 0.4);
   }
+
+  .header {
+    background-image: url("../images/cover-image-light.png");
+  }
 }
 
 .header__decorative-rec {

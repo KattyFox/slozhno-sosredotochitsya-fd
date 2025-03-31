@@ -8,17 +8,17 @@
   --accent-color: #FF0070;
   --menu-text-color: #FF0070;
   --main-dark-bg-image: url('../images/cover-image-dark.png');
-  --title-dark-bg-image: url('../images/cover-image-dark.png');
-  --title-light-bg-image: url('../images/cover-image-light.png');
+  /*--title-dark-bg-image: url('../images/cover-image-dark.png');*/
+  /*--title-light-bg-image: url('../images/cover-image-light.png');*/
 }
 
 .page {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color, url(../images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.header {
-  background-image: url('../images/cover-image-dark.png');
-}
 
 .text-article {
   color: #F1B2CE;
