@@ -130,7 +130,7 @@
   }
 
   @media (width >= 768px) {
-    font-size: var(--header-title-size);
+    /*font-size: var(--header-title-size);*/
     line-height: 0.82;
     display: grid;
     justify-self: start;
@@ -323,13 +323,13 @@
     margin-top: 18px;
     margin-left: 10px;
     width: 236px;
-
   }
 }
 
 .content-section_title.advices {
   @media (width >= 768px) {
-    margin-top: 30px;  }
+    margin-top: 30px;
+  }
 }
 
 .causes {
@@ -367,10 +367,6 @@
 
 .causes.content-section {
   margin-top: -20px;
-
-  @media (width >= 768px) {
-    
-  }
 }
 
 .advices.content-section {
