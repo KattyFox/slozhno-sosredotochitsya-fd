@@ -21,9 +21,9 @@
 
 
 .text-article {
-  color: #F1B2CE;
+  color: var(--article-text-color);
   }
 
 .content-section_title {
-  color: #FF0070;
+  color: var(--accent-color);
 }
