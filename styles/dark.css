@@ -1,29 +1,22 @@
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.Так стили написанные ниже будут иметь больший вес,чем стили в медиазапросе предпочтений пользователя*/
+  --accent-color: #FF0070;
   --main-bg-color: #00183f;
-  --main-heading-color: #00183f;
+  --main-heading-color: #FF0070;
+  --main-bg-image: url('../images/cover-image-dark.png');
+  --main-text-color: #353430;
   --article-text-color: #F1B2CE;
   --header-title-color: #DB00FF;
   --footer-title-color: #DB00FF;
-  --accent-color: #FF0070;
   --menu-text-color: #FF0070;
-  --main-dark-bg-image: url('../images/cover-image-dark.png');
+
   /*--title-dark-bg-image: url('../images/cover-image-dark.png');*/
   /*--title-light-bg-image: url('../images/cover-image-light.png');*/
 }
 
-.page {
-  background-color: var(--main-bg-color, url(../images/cover-image-dark.png));
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 
-.text-article {
-  color: var(--article-text-color);
-  }
 
-.content-section_title {
-  color: var(--accent-color);
-}
+/*.theme-dark.header__decorative-rec  {
+  display: block;
+}*/
