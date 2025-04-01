@@ -4,13 +4,8 @@
   box-sizing: border-box;
 }*/
 
-.text-article {
-  color: var(--article-text-color);
-  }
 
-.content-section_title {
-  color: var(--main-heading-color, #FF0070);
-}
+
 
 .page {
   background-color: var(--main-bg-color);
@@ -51,7 +46,7 @@
   line-height: 25px;
   font-size: var(--main-text-size);
   font-weight: var(--article-font-weight);
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .header__decorative-rec::after {
@@ -185,7 +180,7 @@
 
 .header__theme-menu-list {
   list-style: none;
-  gap: 5px;
+  /*gap: 5px;*/
   padding: 0;
   margin: 0;
   gap: 8px;
