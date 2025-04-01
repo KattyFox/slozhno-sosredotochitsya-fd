@@ -289,10 +289,10 @@
 
 .content-section_title.causes {
   @media (width >= 768px) {
-    width: 236px;
+    width: 227px;
   }
 
-  @media (width >= 768px) {
+  @media (width >= 1024px) {
     width: 315px;
   }
 }
