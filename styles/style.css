@@ -276,7 +276,7 @@
 }
 
 .content-section_title {
-  color: var(--accent-color);
+  color: var(--main-heading-color);
   margin-bottom: 20px;
   font-weight: var(--main-font-weight, 700);
   font-size: var(--main-text-size, 18px);
