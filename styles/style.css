@@ -284,7 +284,9 @@
 }
 
 .content-section_title.causes {
-  width: 236px;
+  @media (width >= 768px) {
+    width: 236px;
+  }
 }
 
 .text-block_title,
