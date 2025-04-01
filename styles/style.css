@@ -294,6 +294,7 @@
   display: grid;
   gap: 50px;
   padding: 0px 10px;
+  margin-bottom: 40px;
 
   @media (width >= 768px) {
     padding: 0px 20px;
