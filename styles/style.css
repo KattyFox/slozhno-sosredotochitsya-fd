@@ -5,11 +5,8 @@
 }*/
 
 .page {
-  background-color: var(--main-bg-color);
-  background-image: var(--main-bg-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+
+
 }
 
 
@@ -22,7 +19,8 @@
 }
 
 .page {
-  background-color: var(--bg-color, #000028);
+  background-color: var(--main-bg-color);
+  /*background-image: var(--main-bg-image);*/
   font-family: var(--main-font);
   font-size: var(--main-text-size, 18px);
   line-height: var(--main-line-height, 23.4px);
@@ -45,6 +43,7 @@
   box-sizing: border-box;
   background-attachment: fixed;
   margin-bottom: 40px;
+  background-image: var(--main-bg-image);
 }
 
 .header__decorative-rec {
@@ -104,10 +103,11 @@
 }
 
 .decorated-zone::after {
-  bottom: 10px;
-  left: 10px;
+  bottom: 20px;
+  left: 20px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
+  
   @media (width >= 1024px) {
     bottom: 20px;
     right: 20px;
@@ -166,9 +166,9 @@
   font-size: var(--content-text-size, 18px);
 }
 
-.title-decor:last-child {
+/*.title-decor:last-child {
   margin-bottom: 10px;
-}
+}*/
 
 .header__decor {
   position: absolute;
@@ -259,7 +259,6 @@
 
 
 .content-section {
-
   font-style: normal;
   line-height: var(--main-line-height, 23.4px);
   font-size: var(--main-text-size);
@@ -277,7 +276,7 @@
 
 .content-section_title {
   /*margin-bottom: 20px;*/
-  color: var(--article-text-color);
+  color: var(--main-heading-color);
   font-weight: var(--main-font-weight);
   font-size: var(--main-text-size);
   font-style: normal;
@@ -341,7 +340,7 @@
 .text-block-subtitle {
   font-weight: var(--article-font-weight);
   background-color: var(--accent-color);
-  color: var(--main-heading-color);
+  color: var(--main-text-color);
 }
 
 
