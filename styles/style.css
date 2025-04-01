@@ -33,12 +33,16 @@
   background-attachment: fixed;
   margin-bottom: 40px;
   background-image: var(--main-bg-image);
+
+  @media (width >= 768px) {
+    margin-bottom: 60px;
+    padding: 20px;
+  }
 }
 
 .header__decorative-rec {
   justify-self: end;
   top: 10px;
-  /*right: 26px;*/
   right: 20px;
   position: absolute;
   color: var(--accent-color);
@@ -47,6 +51,11 @@
   font-size: var(--main-text-size);
   font-weight: var(--article-font-weight);
   text-transform: uppercase;
+
+  @media (width >= 768px) {
+    top: 20px;
+    right: 30px;
+  }
 }
 
 .header__decorative-rec::after {
@@ -81,8 +90,8 @@
   right: 10px;
 
   @media (width >= 768px) {
-    top: 10px;
-    right: 10px
+    top: 20px;
+    right: 20px
   }
 
 }
@@ -102,7 +111,7 @@
   
   @media (width >= 768px) {
     bottom: 20px;
-    right: 20px;
+    left: 20px;
   }
 }
 
@@ -123,9 +132,11 @@
 
   @media (width >= 768px) {
     /*font-size: var(--header-title-size);*/
+    font-size: 120px;
     line-height: 0.82;
     display: grid;
     justify-self: start;
+    margin-left: -20px;
   }
 
   @media (width >= 1024px) {
@@ -146,6 +157,10 @@
   padding: 0;
   font-weight: var(--main-font-weight);
   line-height: var(--main-line-height);
+
+  @media (width >= 768px) {
+    width: 364px;
+  }
 }
 
 .title-decor {
@@ -184,7 +199,6 @@
 
 .header__theme-menu-list {
   list-style: none;
-  /*gap: 5px;*/
   padding: 0;
   margin: 0;
   gap: 8px;
@@ -266,6 +280,11 @@
   margin-bottom: 20px;
   font-weight: var(--main-font-weight, 700);
   font-size: var(--main-text-size, 18px);
+
+}
+
+.content-section_title.causes {
+  width: 236px;
 }
 
 .text-block_title,
@@ -298,6 +317,7 @@
 
   @media (width >= 768px) {
     padding: 0px 20px;
+    gap: 80px
   }
   @media (width >= 1024px) {
     padding: 0px 20px;
@@ -365,6 +385,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
     gap: 20px;
+    padding: 10px 0;
 
     .sunset {
       grid-column: span 2;
@@ -417,16 +438,14 @@
   position: relative;
   display: grid;
   place-items: center;
-
- 
   min-block-size: 668px;
-
   height: 100vh;
 
   @media (width >= 768px) {
     font-size: var(--header-title-size);
     line-height: 0.82;
     margin-top: 40px;
+    min-block-size: 1024px;
   }
 }
 
