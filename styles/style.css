@@ -42,17 +42,16 @@
 
 .header__decorative-rec {
   justify-self: end;
-  top: 12px;
-  right: 26px;
+  top: 20px;
+  /*right: 26px;*/
+  right: 20px;
   position: absolute;
   color: var(--accent-color);
   font-family: var(--main-font);
   line-height: 25px;
   font-size: var(--main-text-size);
   font-weight: var(--article-font-weight);
-  text-transform: uppercase;
-  top: 20px;
-  right: 20px;
+  text-transform: uppercase;  
 }
 
 .header__decorative-rec::after {
@@ -79,8 +78,8 @@
 }
 
 .decorated-zone::before {
-  top: 12px;
-  right: 20px;
+  /*top: 12px;
+  right: 20px;*/
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   top: 20px;
@@ -262,7 +261,6 @@
 }
 
 .content-section_title {
-  /*margin-bottom: 20px;*/
   color: var(--main-heading-color);
   font-weight: var(--main-font-weight);
   font-size: var(--main-text-size);
@@ -361,9 +359,6 @@
   font-weight: var(--article-font-weight);
   font-family: var(--main-font);
 }
-
-
-
 
 .link {
   text-shadow: 2px 2px 0 var(--accent-color);
