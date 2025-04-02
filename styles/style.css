@@ -82,8 +82,6 @@
 }
 
 .decorated-zone::before {
-  /*top: 12px;
-  right: 20px;*/
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   top: 10px;
@@ -93,7 +91,6 @@
     top: 20px;
     right: 20px
   }
-
 }
 
 .decorated-zone.footer::before {
@@ -128,10 +125,8 @@
   font-size: var(--header-title-size);
   line-height: 83%;
   color: var(--header-title-color);
-  /*margin-left: -20px;*/
 
   @media (width >= 768px) {
-    /*font-size: var(--header-title-size);*/
     font-size: 120px;
     line-height: 0.82;
     display: grid;
