@@ -8,15 +8,12 @@
   --accent-color: #FF0070;
   --menu-text-color: #FF0070;
   --main-heading-color:#FF0070;
-  
   --main-gap: 20px;
   --main-text-size: 18px;
   --main-font-weight: 700;
   --article-font-weight: 400;
   --main-line-height: 23.4px;
-  --header-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  
-  
+  --header-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem); 
   --gallery-gap: 20px;
   --gallery-min-height: calc(100vh - 100px);
   --gallery-padding: 20px;
