@@ -9,7 +9,7 @@
 
 .page {
   background-color: var(--main-bg-color);
-  /*background-image: var(--main-bg-image);*/
+  background-image: var(--main-bg-image);
   font-family: var(--main-font);
   font-size: var(--main-text-size, 18px);
   line-height: var(--main-line-height, 23.4px);
@@ -310,9 +310,15 @@
   margin-top: 10px;
 }
 
+.text-block-subtitle:first-of-type {
+  margin-top: 10px;
+}
+
+
 .text-article {
   color: var(--article-text-color);
 }
+
 
 .content {
   display: grid;
@@ -424,7 +430,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /*display: block;*/
+  display: block;
 }
 
 .gallery__item {

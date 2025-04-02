@@ -9,10 +9,10 @@
   --footer-title-color: #ffc2e6;
   --menu-text-color: #353430;
   --menu-hover-color: rgb(50 49 45 / 0.4);
+}
 
-  .theme-light.header__decorative-rec {
-    display: none;
-  }
+.theme-light .header__decorative-rec {
+  display: none;
 }
 
 
