@@ -27,7 +27,8 @@
   --header-title-color: #ffc2e6;
   --footer-title-color: #ffc2e6;
   --menu-text-color: #353430;
-  --menu-hover-color: rgb(50 49 45 / 0.4);
+  --menu-hover-color: #32312d66;
+  --text-link-hover: #353430;
   }
 
   .header__decorative-rec {
