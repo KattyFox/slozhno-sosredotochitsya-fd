@@ -257,7 +257,6 @@
   margin-bottom: 10px;
   font-weight: var(--main-font-weight, 700);
   font-size: var(--main-text-size, 18px);
-  
 }
 
 .text-block_title {
@@ -302,12 +301,6 @@
     }
   }
 }
-
-/*.link {
-  text-shadow: 2px 2px 0 var(--accent-color);
-  color: var(--text-color);
-  text-decoration: none;
-}*/
 
 .text-link {
   color: var(--article-text-color);
