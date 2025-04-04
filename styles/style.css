@@ -51,7 +51,7 @@
 
 .header__decorative-rec::after {
   content: "";
-  display: inline-block;
+  display: var(--rec-display);
   width: 13px;
   height: 13px;
   background-color: var(--accent-color);
