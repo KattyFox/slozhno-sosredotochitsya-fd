@@ -193,6 +193,7 @@
 .header__theme-menu-button:active {
   outline: none;
   border: 1px solid var(--main-heading-color);
+  color: var(--main-heading-color);
 
 }
 
