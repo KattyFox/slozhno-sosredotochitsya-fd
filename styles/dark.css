@@ -12,8 +12,9 @@
   --menu-text-color: #FF0070;
   --menu-hover-color: #ff007066;
   --text-link-hover: #F1B2CE;
+  --rec-display: inline-block;
 }
 
 .theme-dark.header__decorative-rec {
-  display: block;
+  display: var(--rec-display);
 }

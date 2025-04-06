@@ -34,7 +34,7 @@
   }
 
   .header__decorative-rec {
-    display: none;
+    display: var(--rec-display);
   }
 }
   
