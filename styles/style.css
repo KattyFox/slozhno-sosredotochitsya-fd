@@ -32,6 +32,7 @@
 }
 
 .header__decorative-rec {
+  display: var(--rec-display);
   justify-self: end;
   top: 10px;
   right: 20px;
@@ -187,18 +188,16 @@
 .header__theme-menu-button:focus {
   outline: none;
   text-decoration: underline;
-  /*color: var(--menu-text-color);*/
+  border-bottom: var(--menu-text-color);
 }
 
 .header__theme-menu-button:active {
   outline: none;
   border: 1px solid var(--main-heading-color);
-  /*color: var(--main-heading-color);*/
 
 }
 
 .header__theme-menu-button_active {
-  /*color: var(--main-heading-color);*/
   border: 1px solid var(--menu-text-color);
   text-decoration: none;
 }
