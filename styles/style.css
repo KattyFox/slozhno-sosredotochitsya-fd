@@ -317,7 +317,7 @@
 }
 
 .text-link:focus {
-  border: 1px solid var(--main-text-color);
+  border: 1px solid var(--article-text-color);
 }
 
 .gallery {
