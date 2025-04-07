@@ -317,6 +317,10 @@
 }
 
 .text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
   border: 1px solid var(--article-text-color);
 }
 
