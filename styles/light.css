@@ -12,11 +12,6 @@
   --rec-display: none;
 }
 
-.theme-light .header__decorative-rec {
-  display: none;
-}
-
-
 @media (prefers-color-scheme: light) {
   :root {
   --accent-color: #ff8dcb;
@@ -32,10 +27,4 @@
   --text-link-hover: #353430;
   --rec-display: none;
   }
-
-  .header__decorative-rec {
-    display: var(--rec-display);
-  }
 }
-  
-

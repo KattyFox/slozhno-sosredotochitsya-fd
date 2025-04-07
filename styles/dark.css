@@ -14,7 +14,3 @@
   --text-link-hover: #F1B2CE;
   --rec-display: inline-block;
 }
-
-.theme-dark.header__decorative-rec {
-  display: var(--rec-display);
-}

@@ -167,7 +167,7 @@
 
 .header__theme-menu-button {
   display: inline-flex;
-  border: transparent;
+  border: 1px solid transparent;
   background: transparent;
   outline: none;
   padding: 0px 13px;
@@ -179,27 +179,29 @@
   font-weight: var(--article-font-weight);
   text-align: center;
   text-transform: lowercase;
+  text-decoration: none;
+
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-hover-color);
+  border-color: var(--menu-hover-color);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  text-decoration: underline;
-  border-bottom: var(--menu-text-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom-color: var(--menu-text-color);
 }
 
 .header__theme-menu-button:active {
-  outline: none;
-  border: 1px solid var(--main-heading-color);
+  border-color: var(--main-heading-color);
 
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--menu-text-color);
-  text-decoration: none;
+  border-color: var(--menu-text-color);
 }
 
 .content-section {
